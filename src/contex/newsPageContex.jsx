@@ -1,4 +1,4 @@
-import React, {createContext, useContext, useState } from 'react'
+import React, {createContext, useContext, useState, useEffect } from 'react'
 
 export const newsPageContex = createContext()
 
@@ -10,6 +10,9 @@ export const NewsPageProvider = ({children}) => {
 
     const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 
+    
+    {isSidebarOpen ? document.body.classList.add('overflow-hidden') : document.body.classList.remove('overflow-hidden')}
+      
 
 
 
