@@ -9,7 +9,7 @@ function RootLayout({children}) {
 
   return (
     
-      <div className={`flex flex-col des:max-w-screen items-center des:mt-10`}>
+      <div className={`flex flex-col mob:px-0 des:max-w-screen items-center des:mt-10`}>
       
       <Header/> 
       <Sidebar/>
@@ -17,7 +17,7 @@ function RootLayout({children}) {
       
       
       
-      <main className={`w-5/6 m-2 p-4 mob:mt-14`}>{children}</main>
+      <main className={`w-5/6 mob:w-screen m-2`}>{children}</main>
     
     
     
